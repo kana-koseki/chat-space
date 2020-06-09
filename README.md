@@ -16,8 +16,8 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false, index: true|
-|email|string|null: false, unique: true|
+|user_name|string|null: false, index: true, unique: true|
+|email|string|null: false, index: true, unique: true|
 |password|string|null: false|
 
 ### Association
