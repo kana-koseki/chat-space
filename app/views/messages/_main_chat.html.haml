@@ -1,0 +1,44 @@
+.chat-main
+  .chat-main__group-info
+    .left-items
+      .group-name
+        group-name
+      .group-members
+        name
+    .right-items
+      .edit-btn
+        %a{ href: '#' }
+        edit
+  .chat-main__message-list
+    .post
+      .post__user-name
+        name
+      .post__date
+        2020/06/15(mon) 16:30:30
+    .message-text
+      おはよう
+    .post
+      .post__user-name
+        name
+      .post__date
+        2020/06/15(mon) 16:30:30
+    .message-text
+      おはよう
+    .post
+      .post__user-name
+        name
+      .post__date
+        2020/06/15(mon) 16:30:30
+    .message-text
+      おはよう
+  .chat-main__message-form
+    .form-box
+      .form-box__send-message
+        type a text
+      .form-box__send-img
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class:"img"}
+      
+    .send-btn
+      Send
