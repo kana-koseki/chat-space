@@ -5,7 +5,7 @@
         = current_user.username
       .top-items--icon
         .top-items--icon--edit
-          = link_to "#", class: "top-items top-items--edit" do
+          = link_to new_group_path, class: "top-items top-items--edit" do
             = icon('far', 'edit', class: "top-items--icon")
             %span<>
         .top-items--icon--cog
@@ -13,16 +13,10 @@
             = icon('fas', 'cog', class: "top-items--icon")
             %span<>
   .side-bar__group-list
-    .group-index
-      .group-index--group-name
-        group-name
-      .group-index--last-message
-        まだメッセージがありません
-      .group-index--group-name
-        group-name
-      .group-index--last-message
-        まだメッセージがありません
-      .group-index--group-name
-        group-name
-      .group-index--last-message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group-index
+        = link_to '#' do
+          .group-index--group-name
+            = group.name
+          .group-index--last-message
+            メッセージはまだありません
