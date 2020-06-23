@@ -105,6 +105,12 @@
           border-color: #38aef0;
           font-size: 16px;
           text-decoration: none;
+          .btn{
+            border-color: #38aef0;
+            font-size: 16px;
+            text-decoration: none;
+            color: #38aef0;
+          }
         }
         
       }
@@ -113,69 +119,76 @@
       height: calc(100vh - 190px);
       background-color: #fafafa;
       padding: 35px 0 40px 0;
-      .post{
-        margin: 0 20px 12px 40px;
-        display: flex;
-        justify-content: space-between;
-        &__user-name{
-          color: #333333;
-          font-size: 16px;
-        }
+      .User{
+        margin-left: 40px;
         &__date{
-          color: #999999;
-          font-size: 12px;
-          margin: 0 20px 0 0;
+          display: flex;
+          align-items: center;
+          padding-top: 35px ;
+          margin-bottom: 12px;
+          &--name{
+            color: #333333;
+            font-size: 16px;
+          }
+          &--time{
+            color: #999999;
+            font-size: 12px;
+            padding-left: 10px;
+          }
         }
-      }
-      .message-text{
-        color: #434A54;
-        font-size: 14px;
-        margin: 0px 20px 46px 40px;
+        &__comment{
+          color: #434A54;
+          font-size: 14px;
+          margin-bottom: 11px;
+        }
+        .Message__image{
+          height: calc(100vh - 590px);
+        }
       }
     }
 
     &__message-form{
       height: 90px;
-      background-color: #2d2d2d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #d2d2d2;
+      padding: 20px 40px;
       .form-box{
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        height: 50px;
-        width: calc(100vw - 400px);
-        background-color: #ffffff;
-        margin: 0 0 0 40px;
-        &__send-message{
-          width:calc(100vw - 520px);
-          position: absolute;
-          left: 10px;
-          color: #434A54;
-        }
-        &__send-img{
-          width: 30px;
-          position: absolute;
-          right: 0;
-          .img{
-            display: none;
+        .text{
+          width: 100% ;
+          display: flex;
+          position: relative;
+          .new_text{
+            height: 50px;
+            width: 100%;
+            padding: 0 40px 0 15px;
+            color: #434a54;
+            background-color: #ffffff;
+            border-style: none;
+          }
+          .new_image{
+            position: absolute;
+            height: 50px;
+            top: 10px;
+            right: 10px;
+            .image-icon{
+              font-size: 2rem;
+            }
+            .image_file{
+              display: none;
+            }
           }
         }
-      }
-
-      .send-btn{
-        height: 50px;
-        width: 80px;
-        background-color: #38aef0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 40px 0 15px;
-        color: #fafafa;
+        .submit_btm{
         font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+        border: none;
+        color: #fff;
+        background-color: #38AEF0;
         }
+      }
     }
   }
 }
